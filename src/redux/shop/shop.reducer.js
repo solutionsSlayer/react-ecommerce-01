@@ -8,11 +8,6 @@ const INITIAL_STATE = {
 
 const shopReducer = (state = INITIAL_STATE, action) => {
     switch(action.type) {
-        case shopActionTypes.UPDATE_SHOP_COLLECTIONS:
-            return {
-                ...state,
-                collections: action.payload
-            }
         case shopActionTypes.FETCH_COLLECTIONS_START:
             return {
                 ...state,
